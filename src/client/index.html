@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title> Env Viewer</title>
+    <style>
+      #rooms {
+        display: flex;
+        flex-direction: column;
+      }
+      .room {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        border-bottom: solid gray;
+      }
+      .room button {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label for='name'>add env:
+        <input name='name' id='name' type='text' autofocus />
+      </label>
+    </div>
+    <div id='rooms'>
+    </div>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/static/main.js"></script>
+  </body>
+</html>
+
