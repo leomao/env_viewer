@@ -50,7 +50,7 @@ gulp.task('nodemon', (cb) => {
   return nodemon;
 });
 
-gulp.task('build', ['server'], (cb) => cb());
+gulp.task('build', ['client', 'server'], (cb) => cb());
 
 gulp.task('dev', ['build', 'watch', 'nodemon']);
 
