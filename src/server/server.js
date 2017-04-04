@@ -10,9 +10,6 @@ import logger from './logger';
 const app = express();
 app.set('port', process.env.PORT || 3000);
 
-app.set('view engine', 'pug');
-app.set('views', path.join(__dirname, 'views'));
-
 app.use('/static', express.static(path.join(__dirname, 'static')));
 
 const server = http.createServer(app);
